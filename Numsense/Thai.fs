@@ -50,6 +50,7 @@ let internal tryParseThaiImp (x : string) =
         | StartsWith "-" t 
         | StartsWith "ศูนย์" t -> conv (0 + acc) t
         | StartsWith "หนึ่ง" t -> conv (1 + acc) t
+        | StartsWith "เอ็ด" t -> conv (1 + acc) t 
         | StartsWith "สอง" t -> conv (2 + acc) t
         | StartsWith "สาม" t -> conv (3 + acc) t
         | StartsWith "สี่" t -> conv (4 + acc) t
