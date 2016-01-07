@@ -1,8 +1,8 @@
 ﻿using FsCheck;
 using FsCheck.Xunit;
+using Microsoft.FSharp.Core;
 using Ploeh.Numsense.ObjectOriented;
 using Xunit;
-using Microsoft.FSharp.Core;
 
 namespace Ploeh.Numsense.UnitTests
 {
@@ -89,7 +89,7 @@ namespace Ploeh.Numsense.UnitTests
                 INumeralConverter sut,
                 FSharpFunc<int, string> toNumeralImp,
                 FSharpFunc<string, FSharpOption<int>> tryParseImp)
-            {   
+            {
                 this.Sut = sut;
                 this.ToNumeralImp = toNumeralImp;
                 this.TryParseImp = tryParseImp;
